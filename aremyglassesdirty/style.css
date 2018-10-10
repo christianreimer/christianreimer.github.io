@@ -1,0 +1,107 @@
+#centered {
+  width: 900px;
+  height: 600px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: -300px 0 0 -450px;
+  z-index: -1;
+
+  text-align: center;
+
+  color: #333;
+  font-family: Futura; 
+}
+
+#toptext {
+  font-size:6vw;
+  margin-bottom: 50px;
+  z-index: 1;
+}
+
+#subtext {
+  font-size:3vw;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+#reveal {
+  width: 900px;
+  display: none;
+  z-index: 2;
+}
+
+#glasses {
+  z-index: 4;
+  position: absolute;
+  height: 300px;
+  width: 800px;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -400px;
+}
+
+#glass {
+  animation:zoomIn 10s linear infinite alternate-reverse;
+  background-image:url(glass.jpg);
+  background-size:cover;
+  opacity:.3;
+  z-index: 3;
+  height:240px;
+  width:700px;
+  top: 50%;
+  left: 50%;
+  margin: -10px 0 0 -350px;
+  position: absolute;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform:scale(1);
+  }
+  100% {
+    transform:scale(1.14);
+  }
+}
+
+#button1 {
+  background: #3498db;
+  width: 180px;
+  padding: 4px 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  border-radius: 3px;
+}
+
+#button2 {
+  background: #3498db;
+  width: 180px;
+  padding: 4px 0;
+  position: absolute;
+  margin-top: 80px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  border-radius: 3px;
+}
+
+.button p {
+  font-family: 'Roboto';
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
