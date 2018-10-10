@@ -21,7 +21,7 @@ function reveal(arg) {
     if(arg === "no") {
         elem_toptext.innerHTML = "Of course they are dirty!";
     } else {
-        elem_toptext.innerHTML = "Dosn't matter, they are still dirty!";
+        elem_toptext.innerHTML = "Doesn't matter, they are still dirty!";
     }
 
     let elem_subtext = document.getElementById("subtext");
