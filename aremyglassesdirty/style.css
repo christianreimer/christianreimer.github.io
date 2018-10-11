@@ -13,7 +13,7 @@
 }
 
 #subtext {
-  font-size:3vw;
+  font-size: 4vw;
   margin-bottom: 5vw;
 }
 
@@ -27,7 +27,7 @@
   position: relative;
 }
 
-#glasses {
+#frame {
   z-index: 4;
   position: absolute;
   width: 800px;
@@ -59,23 +59,14 @@
   }
 }
 
-#button1 {
+.button {
   margin: 0 auto;
   background: #3498db;
   width: 75%;
   max-width: 500px;
   padding: 0.25vw 0;
   border-radius: 0.5vw;
-  margin-bottom: 4vw;
-}
-
-#button2 {
-  margin: 0 auto;
-  background: #3498db;
-  width: 75%;
-  max-width: 500px;
-  padding: 0.15vw 0;
-  border-radius: 0.5vw;
+  /*margin-bottom: 4vw;*/
 }
 
 .button p {

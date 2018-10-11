@@ -1,16 +1,19 @@
+let elem_but = document.getElementById("button1");
+makeJellyButton(elem_but, "yes");
+elem_but.style.marginBottom = "3vw";
 
-makeJellyButton(document.getElementById("button1"), "yes");
-makeJellyButton(document.getElementById("button2"), "no");
+elem_but = document.getElementById("button2");
+makeJellyButton(elem_but, "no");
 
 
 function makeJellyButton(button, cmd) {
     button.addEventListener('click', function() {
-    var duration = 0.3, delay = 0.08;
-    TweenMax.to(button, duration, {scaleY: 1.6, ease: Expo.easeOut});
-    TweenMax.to(button, duration, {scaleX: 1.2, scaleY: 1, ease: Back.easeOut, easeParams: [3], delay: delay});
-    TweenMax.to(button, duration * 1.25, {scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
+        var duration = 0.3, delay = 0.08;
+        TweenMax.to(button, duration, {scaleY: 1.6, ease: Expo.easeOut});
+        TweenMax.to(button, duration, {scaleX: 1.2, scaleY: 1, ease: Back.easeOut, easeParams: [3], delay: delay});
+        TweenMax.to(button, duration * 1.25, {scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
 
-    setTimeout(function() { reveal(cmd); }, 650);
+        setTimeout(function() { reveal(cmd); }, 650);
     });
 }
 
