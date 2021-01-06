@@ -21,6 +21,12 @@
   margin: 0 auto;
 }
 
+#reloaddiv {
+  position: relative;
+  top: 325px;
+  visibility: hidden;
+}
+
 #reveal {
   display: none;
   z-index: 2;

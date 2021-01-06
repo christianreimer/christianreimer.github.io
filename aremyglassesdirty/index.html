@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Are My Glasses Dirty?</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 
-<div id="centered">
-    <div id="toptext">Are My Glasses Dirty?</div>
-    <div id="subtext">Did you just clean them?</div>
+    <div id="centered">
+        <div id="toptext">Are My Glasses Dirty?</div>
+        <div id="subtext">Did you just clean them?</div>
 
-    <div id="buttondiv">
-        <div class="button" id="button1"><p>Yes</p></div>
-        <div class="button" id="button2"><p>No</p></div>
+        <div id="buttondiv">
+            <div class="button" id="button1">
+                <p>Yes</p>
+            </div>
+            <div class="button" id="button2">
+                <p>No</p>
+            </div>
+        </div>
+
+        <div id="reveal">
+            <div id="frame"><img src="frame.png"></div>
+            <div id="glass"></div>
+        </div>
+
+        <div id="reloaddiv">
+            <div class="button" id="button3">
+                <p>Try Again</p>
+            </div>
+        </div>
     </div>
 
-    <div id="reveal">
-        <div id="frame"><img src="frame.png"></div>
-        <div id="glass"></div>
-    </div>
-</div>
-
-<script src="TweenMax.min.js"></script>
-<script src="script.js"></script>
+    <script src="TweenMax.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
